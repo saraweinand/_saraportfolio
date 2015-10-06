@@ -1068,14 +1068,23 @@ hr.style_1 {
 
 @media screen and (max-width: 480px) {
 
-  .home {
-    background-height: 300%;
-    background-position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+
+.home {
+  height: 70%;
+  background: url(../img/paint-6.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+    text-align: center;
+    background-position: 50% 100%;
 }
+
+.home h1 {
+  padding-top: 25%;
+}
+
+
 
 
   
