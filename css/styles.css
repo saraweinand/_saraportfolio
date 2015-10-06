@@ -1072,12 +1072,18 @@ hr.style_1 {
 
 
 .home {
-  height: 70%;
-  background-position: 50% -100%;
+  height: 100%;
+  background: none;
 }
 
 .home h1 {
-  padding-top: 25%;
+  padding: 20% 0 0 0;
+  color: black;
+}
+
+.home h2 {
+  padding: 0 0 5% 0;
+  color: black;
 }
 
 
