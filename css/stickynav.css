@@ -3,7 +3,7 @@
 .nav-container { 
   width:100%; 
   margin: 0 auto; 
-  background: #ddd;
+  background: #FFE4D8;
 
 }
 
@@ -21,7 +21,7 @@
 }
 #stickynav-container { 
   width:100%; 
-  background: #eee;
+  background: #FFE4D8;
 }
 
 #stickynav { 
@@ -48,7 +48,7 @@
   display:block; 
   float:left; 
   padding: .5em; 
-  color: #8da7aa; 
+  color: #000; 
 
   text-transform: uppercase;
   font-weight: 500;
