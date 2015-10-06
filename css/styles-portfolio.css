@@ -1,0 +1,545 @@
+body {
+    margin: 0 auto;
+    background: #eee;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    font-family: 'Proxmima Nova', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+article {
+    width: 100%;
+    float: right;
+    margin: 0;
+    padding: 0;
+    z-index: 99999;
+}
+
+
+
+
+
+
+.divider {
+  width: 2.5%;
+  display: block;
+  margin: 0 auto;
+}
+
+.about .divider {
+  width: 2.5%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay:1.2s;
+  animation-delay: 1.2s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+
+.buttons {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 3%;
+  margin-right: -1%;
+}
+
+.buttons  a {
+  background: #fff;
+  float: right;
+  width: 7em;
+  padding: 5%;
+  margin: 3% 2% 0% 0%;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+.buttons  a:hover {
+  background: red;
+}
+.home {
+    height: 70vh;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    background-color: #8DA8AB; /*url(../img/bg2.jpg) repeat-y center center fixed; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+    text-align: center;
+    position: relative;
+    z-index: -9999;
+}
+
+
+.home h1 {
+  padding-top: 10%;
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 0;
+    letter-spacing: .1em;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    z-index: 999;
+}
+
+.home h2 {
+  text-align: center;
+    font-weight: 300;
+    margin: 0;
+    font-size: 1em;
+    letter-spacing: .25em;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 999;
+}
+.home h3 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.home h6 {
+  font-size: .8em;
+  color: #fff;
+  margin: 0% auto 1em -1.4%;
+  text-align: center;
+}
+
+.home .enter svg {
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 3% 47%;
+}
+
+h6 {
+    font-weight: 700;
+    letter-spacing: .05em;
+    font-size: 2.5em;
+    padding: 8% 5% 0 0;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 1%;
+    color: #8DA8AB;
+}
+
+hr.style_1 {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 10%;
+    margin-top: -2%;
+}
+
+.home a:hover {
+    border-bottom: 1px solid black;
+
+}
+
+
+
+/*------ NAVIGATION------*/
+
+
+.work {
+    width: 100%;
+    background: #eee;
+    margin: 0 auto 0 auto;
+    padding: 5% auto 0 auto;
+    display: block;
+    position: relative;
+}
+
+.work img {
+  width: 60%;
+  display: inline-block;
+  float: left;
+  margin: 5% 0 0 10%;
+}
+
+.work_descrip {
+  width: 20%;
+  display: inline-block;
+  float: left;
+  margin: 5% 0 0 2%;
+}
+
+.work_descrip h4 {
+
+  font-weight: 300;
+  margin: 0 0 1% 0;
+}
+
+.work_descrip h3 {
+  font-size: 1.5em;
+  margin: 0 0 1% 0;
+}
+
+.work p {
+    text-align: left;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+.about {
+
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 10% auto 5% auto;
+    display: block;
+    z-index: 9999999999;
+    position: relative;
+}
+
+
+.about img {
+    width: 60%;
+    display: block;
+    margin: -18% auto 0 auto;
+    position: relative;
+
+}
+
+
+
+
+
+
+.contact {
+    width: 100%;
+    height: 25em;
+    display: block;
+    margin: 5% auto 0 auto;
+
+    padding-top: .1%;
+}
+
+
+.contact p {
+    width: 80%;
+    font-size: .9em;
+    font-weight: 300;
+    line-height: 1.25em;
+    display: block;
+    margin: 2% auto 2% auto;
+    text-align: center;
+    font-style: italic;
+}
+
+.contact h5 {
+    text-transform: uppercase;
+    font-size: .9em;
+    font-weight: 300;
+    text-align: center;
+    margin-top: .5em;
+}
+
+.contact h6 {
+  font-size: 1.25em;
+    padding-top: 2%;
+    color: #3a3939;
+}
+
+.contact img {
+    width: 13.25%;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 0;
+}
+
+.more_work {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.socialmedia {
+  width: 100%;
+  float: right;
+  margin: 0;
+  background: #8ea8ab;
+  color: #fff;
+  height: 5em;
+}
+
+.socialmedia li:nth-child(1) {
+    float: left;
+    margin-left: 5%;
+    font-weight: 300;
+    font-size: .75em;
+}
+
+.socialmedia li {
+    list-style: none;
+    display: inline-block;
+    margin-top: 2%;
+    float: right;
+}
+
+.socialmedia li:nth-child(2) {
+    margin-right: 5%;
+}
+
+.socialmedia li:hover {
+    opacity: .5;
+}
+
+.socialmedia li img {
+    width: 2em;
+    display: inline-block;
+    margin-bottom: -.5em;
+
+}
+
+
+.socialmedia h2 {
+    margin: -1em 0 0 1em;
+    padding: 0em;
+}
+
+
+
+
+
+
+.footer {
+    background: #8ea8ab;
+    height: 2em;
+    margin-top: -2%;
+    display: block;
+    width: 100%;
+    height: 10%;
+
+}
+
+.footer h4 {
+    font-size: .5em;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 1em;
+
+
+}
+
+
+
+
+
+
+.project {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+}
+
+.project h5 {
+
+}
+
+.project img {
+    width: 50%;
+    float: left;
+    margin: -2% 0 0 5%;
+}
+
+.project .bio {
+    width: 30%;
+    float: left;
+    margin: 8% 0 0 3%;
+}
+
+.project .bio h5 {
+    text-transform: uppercase;
+    color: #8a4353;
+    margin: 0;
+}
+
+.project .bio p {
+    margin: 0 0 5% 0;
+    font-size: .9em;
+    font-weight: 300;
+    line-height: 1.25em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.backarrow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2%;
+  z-index: 999999999999;
+}
+
+.backarrow img {
+  width: 20%;
+}
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+  
+  #gallery_container ul li {
+
+  width: 32.5%;
+
+}
+
+
+}
+
+@media screen and (max-width: 768px) {
+  
+  #gallery_container ul li {
+  width: 49%;
+  }
+
+  .about {
+    margin: -11% auto 0 auto;
+    padding: 10% auto 5% auto;
+}
+
+  .about .bio p:nth-child(1) {
+    width: 80%;
+    margin-bottom: 10%;
+  }
+
+.about .bioColumn {
+    width:90%;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    padding-bottom: 0;
+}
+
+.about .bioColumn:nth-child(3) {
+    margin: 0 auto;
+}
+
+
+.contact {
+    width: 100%;
+    height: 25em;
+    display: block;
+    margin: 0% auto 0 auto;
+    background: gray;
+    padding-top: .1%;
+}
+
+.home .enter {
+  position: absolute;
+  bottom: 0;
+  margin: 5% 0 0 40%;
+  padding: 0;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+  
+  #gallery_container ul li {
+
+  width: 99%;
+
+}
+
+.about {
+    margin: -20% auto 0 auto;
+    padding: 10% auto 5% auto;
+}
+
+.home h1 {
+    font-size: 4em;
+}
+
+.home .enter {
+  position: absolute;
+  bottom: 0;
+  margin: 5% 0 0 30%;
+  padding: 0;
+}
+
+
+}
+
+
+
+
+/*CLEARFIX*/
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}* html .clearfix,*:first-child+html .clearfix{zoom:1}
