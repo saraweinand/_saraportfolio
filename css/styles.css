@@ -25,24 +25,12 @@ article {
 
 
 
-.divider {
-  width: 2.5%;
-  display: block;
-  margin: 0 auto;
-}
-
-.about .divider {
-  width: 2.5%;
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-}
 
 .nav ul {
   list-style: none;
   text-align: right;
   padding: 0;
-  margin: 2% 3% 0 0;
+  margin: 0% 3% 0 0;
   padding-top: 1%;
 }
 .nav li {
@@ -55,8 +43,8 @@ article {
  
 .nav a {
   text-decoration: none;
-  color: red;
-  padding-left: 2%;
+  color: #000;
+  padding-left: 1%;
   text-transform: uppercase;
   font-weight: 300;
 }
@@ -105,11 +93,11 @@ article {
 
 
 .home {
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     display: block;
     margin: 0% auto 0 auto;
-    background: url(../img/paint-6.png) no-repeat center center fixed;
+    
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -137,12 +125,12 @@ article {
 
 
 .home h1 {
-  padding-top:17%;
+  padding-top:10%;
     text-align: center;
     font-family: 'Playfair Display', serif;
     font-size: 6em;
     padding-bottom: 0;
-    color: #FFE4D8;
+    color: #000;
     margin: 0;
     text-transform: uppercase;
     z-index: 999;
@@ -157,7 +145,7 @@ article {
     margin: 0;
     font-size: 1em;
     letter-spacing: .25em;
-    color: #FFE4D8;
+    color: #000;
     text-transform: uppercase;
     z-index: 999;
 }
@@ -213,6 +201,7 @@ hr.style_1 {
 .skills_container {
   width: 100%;
   background: #fff;
+  padding-top: 4%;
 
 }
 
