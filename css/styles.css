@@ -1069,7 +1069,12 @@ hr.style_1 {
 @media screen and (max-width: 480px) {
 
   .home {
-    background-height: 100%;*/
+    background-height: 300%;
+    background-position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 
