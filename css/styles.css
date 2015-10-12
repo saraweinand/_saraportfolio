@@ -1,6 +1,6 @@
 body {
     margin: 0 auto;
-    background: #FFE4D8;
+    background: #fde3d7;
     width: 100vw;
     padding: 0;
     margin: 0;
@@ -139,7 +139,6 @@ article {
     margin: 0;
     text-transform: uppercase;
     z-index: 999;
-    letter-spacing: .05em;
 }
 
 
@@ -384,20 +383,6 @@ hr.style_1 {
   height: 100%;
 }
 
-#gallery_container h5 {
-  font-family: 'Proxmima Nova', sans-serif;
-  font-weight: 300;
-  display: block;
-  font-size: 1em;
-}
-
-#gallery_container h4 {
-  font-family: 'Proxmima Nova', sans-serif;
-  font-weight: 300;
-  font-size: 2em;
-  display: block;
-  text-align: center;
-}
 
 
 /*Image styles*/
@@ -438,81 +423,11 @@ hr.style_1 {
   padding: 0;
 }
 
-#gallery_container ul li:hover > .overlay{
-  width:100%;
-    height:99%;
-    position:absolute;
-    background-color:#000;
+#gallery_container ul li:hover {
     opacity:0.8;
 
 }
 
-
-/*Image titles*/
-#gallery_container .image_title {
-  width: 100%; 
-  height: 100%;
-  padding-top: 20%;
-  position: absolute;
-  top: 0; left: 0;
-  display: table;
-  /*Hover effect - default state*/
-  opacity: 0;
-  transition: all 0.5s;
-  overflow: hidden;
-
-}
-
-#gallery_container li:nth-child(3) .image_title,
-#gallery_container li:nth-child(4) .image_title,
-#gallery_container li:nth-child(5) .image_title,
-#gallery_container li:nth-child(6) .image_title{
-  padding-top: 15%;
-}
-
-
-#gallery_container .title {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1.5em;
-  font-family: 'Proxmima Nova', sans-serif;
-  font-weight: 700;
-  letter-spacing: .08em;
-  text-align: center;
-  /*Vertical center align*/
-  display: table-cell;
-  /*Hover effect - default state*/
-  transform: scale(0.2);
-  transition: all 0.25s;
-  display: block;
-  margin-bottom: 0;
-  overflow: hidden;
-}
-
-#gallery_container .subtitle {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: .75em;
-  text-align: center;
-  /*Vertical center align*/
-  display: table-cell;
-  /*Hover effect - default state*/
-  transform: scale(1);
-  transition: all 0.25s;
-  display: block;
-  overflow: hidden;
-}
-/*Zoom icon over each title using iconfont and pseudo elements*/
-/*Hover states*/
-#gallery_container li:hover .image_title {
-  opacity: 1;
-  overflow: hidden;
-}
-#gallery_container li:hover .title,
-#gallery_container li:hover .subtitle {
-  transform: scale(1);
-  overflow: hidden;
-}
 
 
 
@@ -989,13 +904,14 @@ hr.style_1 {
 @media screen and (max-width: 480px) {
 
 .home {
-  height: 75vh;
+  height: 70vh;
   background: none;
 }
 
 .home h1 {
   padding-top: 15vh;
   color: #000;
+  font-size: 3em;
 }
 
 .home h2 {

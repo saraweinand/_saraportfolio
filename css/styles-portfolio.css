@@ -1,6 +1,6 @@
 body {
     margin: 0 auto;
-    background: #eee;
+    background: #fff;
     width: 100vw;
     padding: 0;
     margin: 0;
@@ -20,25 +20,6 @@ article {
     padding: 0;
     z-index: 99999;
 }
-
-
-
-
-
-
-.divider {
-  width: 2.5%;
-  display: block;
-  margin: 0 auto;
-}
-
-.about .divider {
-  width: 2.5%;
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-}
-
 
 
 
@@ -80,6 +61,11 @@ article {
   -moz-animation-delay: 1.6s;
   animation-delay: 1.6s;
 }
+.fade-in.four {
+  -webkit-animation-delay: 2.0s;
+  -moz-animation-delay: 2.0s;
+  animation-delay: 2.0s;
+}
 
 .buttons {
   position: absolute;
@@ -107,7 +93,7 @@ article {
     width: 100%;
     display: block;
     margin: 0 auto;
-    background-color: #8DA8AB; /*url(../img/bg2.jpg) repeat-y center center fixed; */
+    background-color: #aaaaaa; /*url(../img/bg2.jpg) repeat-y center center fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -127,6 +113,7 @@ article {
     color: #fff;
     margin: 0;
     text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
     z-index: 999;
 }
 
@@ -191,7 +178,7 @@ hr.style_1 {
 
 .work {
     width: 100%;
-    background: #eee;
+    background: #fff;
     margin: 0 auto 0 auto;
     padding: 5% auto 0 auto;
     display: block;
@@ -313,7 +300,7 @@ hr.style_1 {
   width: 100%;
   float: right;
   margin: 0;
-  background: #8ea8ab;
+  background: #fde3d7;
   color: #fff;
   height: 5em;
 }
@@ -359,7 +346,7 @@ hr.style_1 {
 
 
 .footer {
-    background: #8ea8ab;
+    background: #fde3d7;
     height: 2em;
     margin-top: -2%;
     display: block;
@@ -450,18 +437,32 @@ hr.style_1 {
 
 
 
-@media screen and (max-width: 1200px) {
-  
-  #gallery_container ul li {
-
-  width: 32.5%;
-
-}
-
-
-}
-
 @media screen and (max-width: 768px) {
+
+  .home {
+    height: 50vh;
+}
+
+  .about img {
+    width: 90%;
+    display: block;
+    margin: -18% auto 0 auto;
+    position: relative;
+}
+
+.work img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    float: none;
+}
+
+.work_descrip {
+    width: 90%;
+    display: block;
+    margin: 5% auto;
+    float: none;
+}
   
   #gallery_container ul li {
   width: 49%;
@@ -525,14 +526,31 @@ hr.style_1 {
 }
 
 .home h1 {
-    font-size: 4em;
+    font-size: 2em;
+    padding-top: 17vh;
 }
 
-.home .enter {
-  position: absolute;
-  bottom: 0;
-  margin: 5% 0 0 30%;
-  padding: 0;
+.buttons {
+  width: 90%;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.buttons a {
+    background: #fff;
+    float: left;
+    display: inline-block;
+    width: 45%;
+    padding: 2%;
+    margin: 15% 1% 0% auto;
+    text-transform: uppercase;
+    font-size: .8em;
+    text-align: center;
+}
+
+.contact {
+  height: 10em;
 }
 
 
