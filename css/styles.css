@@ -889,15 +889,19 @@ hr.style_1 {
 
 @media screen and (max-width: 768px) {
 
-
+.home {
+  background: none;
+}
 
   .home h1 {
+    color: #000;
   font-size: 4em;
 }
 
 .home h2 {
   font-size: .75em;
   padding-bottom: 20%;
+  color: #000;
 }
 
 .skillsheader h1 {
