@@ -989,9 +989,12 @@ hr.style_1 {
 @media screen and (max-width: 480px) {
 
 .home {
+  height: 80vh;
   background: none;
 }
+
 .home h1 {
+  padding-top: 15vh;
   color: #000;
 }
 
