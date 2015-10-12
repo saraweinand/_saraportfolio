@@ -43,7 +43,7 @@ article {
  
 .nav a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
   padding-left: 1%;
   text-transform: uppercase;
   font-weight: 300;
@@ -90,18 +90,23 @@ article {
   -moz-animation-delay: 1.6s;
   animation-delay: 1.6s;
 }
+.fade-in.four {
+  -webkit-animation-delay: 2.0s;
+  -moz-animation-delay: 2.0s;
+  animation-delay: 2.0s;
+}
 
 
 .home {
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     display: block;
     margin: 0% auto 0 auto;
-    
+    background: url(../img/paint-6.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: 120%;*/
+    background-size: 110%;*/
     text-align: center;
     position: relative;
 }
@@ -125,12 +130,12 @@ article {
 
 
 .home h1 {
-    padding-top: 15vh;
+    padding-top: 20vh;
     text-align: center;
     font-family: 'Playfair Display', serif;
     font-size: 6em;
     padding-bottom: 0;
-    color: #000;
+    color: #fde3d7;
     margin: 0;
     text-transform: uppercase;
     z-index: 999;
@@ -145,7 +150,7 @@ article {
     margin: 0;
     font-size: 1em;
     letter-spacing: .25em;
-    color: #000;
+    color: #fff;
     text-transform: uppercase;
     z-index: 999;
 }
@@ -193,7 +198,7 @@ hr.style_1 {
 }
 
 .home a:hover {
-    border-bottom: 1px solid black;
+    font-weight: 700;
 
 }
 
@@ -210,11 +215,21 @@ hr.style_1 {
   font-size: 1.25em;
   display: block;
   text-align: center;
-  padding-top: 3%;
+  padding-top: 0%;
   margin: 1% 0 0 0;
   text-transform: uppercase;
   color: #3a3939;
 
+}
+
+.skillsheader svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  display: block;
+  margin: 0 auto;
 }
 
 
@@ -225,20 +240,20 @@ hr.style_1 {
 }
 
 
-.col4 {
+.col3 {
   float: left;
-  width: 25%;
+  width: 33.33%;
   display: block;
-  margin: 5% auto;
+  margin: 10% auto;
 }
 
-.col4 img {
+.col3 img {
   margin: 0 auto;
   display: block;
   width: 30%;
 }
 
-.col4 h3, .col4 p {
+.col3 h3, .col3 p {
   text-align: center;
 }
 
@@ -273,8 +288,8 @@ hr.style_1 {
 
 .work {
     width: 100%;
-
-    margin: 0 auto 0 auto;
+    border-top: 1px solid #fde3d7;
+    margin: -2% auto 0 auto;
     padding: 0;
     display: block;
     position: relative;
@@ -878,16 +893,6 @@ hr.style_1 {
 
 
 
-/*  
-    Recommeded CSS
-    ==============
-*/
-
-.panel {
-    position: fixed;
-    left: -15.625em; /*or width of your navigation panel*/
-    width: 15.625em; /*should match the above value*/
-}
 
 
 
@@ -926,10 +931,7 @@ hr.style_1 {
 
 @media screen and (max-width: 768px) {
 
-.home {
-  height: 100%;
-  background: none;
-}
+
 
   .home h1 {
   font-size: 4em;
@@ -940,10 +942,10 @@ hr.style_1 {
   padding-bottom: 20%;
 }
 
-
-.col4 {
-  width: 50%;
+.skillsheader h1 {
+  padding-top: 5%;
 }
+
 
 
 .skills {
@@ -1004,11 +1006,11 @@ hr.style_1 {
 
 .contact {
     width: 100%;
-    height: 25em;
+    height: 12em;
     display: block;
     margin: 0% auto 0 auto;
-    background: gray;
     padding-top: .1%;
+
 }
 
 
@@ -1023,13 +1025,13 @@ hr.style_1 {
   font-size: 3em;
 }
 
-.col4 {
+.col3 {
   float: left;
   width: 40%;
   padding: 5% 1.5%;
 }
 
-.col4 img {
+.col3 img {
   margin: 0 auto;
   display: block;
   width: 30%;
@@ -1068,6 +1070,10 @@ hr.style_1 {
 
 @media screen and (max-width: 480px) {
 
+.skillsheader h1 {
+  padding-top: 6%;
+  padding-bottom: 8%;
+}
 
 .home h2 {
   padding-bottom: 20%;
@@ -1088,7 +1094,7 @@ hr.style_1 {
     padding: 10% auto 5% auto;
 }
 
-.col4 {
+.col3 {
   float: left;
   width: 100%;
   margin: 0 auto;
@@ -1096,7 +1102,7 @@ hr.style_1 {
   padding: 5% 1.5%;
 }
 
-.col4 img {
+.col3 img {
   margin: 0 auto;
   display: block;
   width: 30%;
