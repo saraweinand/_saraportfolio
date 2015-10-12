@@ -985,7 +985,17 @@ hr.style_1 {
 
   .home {
     height: 70vh;
-  }
+    width: 100%;
+    display: block;
+    margin: 0% auto 0 auto;
+    background: url(../img/paint-7.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 110%;
+    text-align: center;
+    position: relative;
+}
 
 .skillsheader h1 {
   padding-top: 6%;
