@@ -891,6 +891,17 @@ hr.style_1 {
 
 }
 
+#gallery_container ul li:nth-child(1),
+#gallery_container ul li:nth-child(2),
+#gallery_container ul li:nth-child(3),
+#gallery_container ul li:nth-child(4),
+#gallery_container ul li:nth-child(5),
+#gallery_container ul li:nth-child(6) {
+  width: 50%;
+  margin: -.75% 0 0 0;
+  padding: 0;
+}
+
 
 
 
