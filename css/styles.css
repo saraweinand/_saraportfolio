@@ -820,6 +820,10 @@ hr.style_1 {
   color: #000;
 }
 
+.nav a {
+  color: #000;
+}
+
 .skillsheader h1 {
   padding-top: 5%;
 }
@@ -934,6 +938,16 @@ hr.style_1 {
   padding-bottom: 8%;
 }
 
+.work {
+  margin-top: 5%;
+  padding-top: 7%;
+}
+
+.work h4 {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
 .home h2 {
   padding-bottom: 20%;
 }
@@ -966,6 +980,11 @@ hr.style_1 {
   margin: 0 auto;
   display: block;
   width: 30%;
+}
+
+.socialmedia li:first-of-type {
+  width: 90%;
+  text-align: center;
 }
 
 }
